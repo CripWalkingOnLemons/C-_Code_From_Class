@@ -1,4 +1,4 @@
-﻿namespace week_13
+
 {
     internal class Program
     {
@@ -30,17 +30,17 @@
                     daysInMonth = 30;
                     break;
                 case 2:
-                    daysInMonth = IsLeapYear(year) ? 29 : 28;
+                    daysInMonth = IsLY(year) ? 29 : 28;
                     break;
                 default:
                     daysInMonth = -1;
                     break;
             }
 
-            Console.WriteLine($"The number of days in the month is: {daysInMonth}");
+            Console.WriteLine($"The # of days in the month is: {daysInMonth}");
 
-            
-            bool IsLeapYear(int year)
+            //IsLY is IsLeapYear
+            bool IsLY(int year)
             {
                 return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
             }
