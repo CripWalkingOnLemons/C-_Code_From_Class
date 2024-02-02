@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp25
+
 {
     internal class Program
     {
